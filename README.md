@@ -1,12 +1,18 @@
-# React + Vite
+# Virtuality-Nova V6
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Progetto React + Vite con integrazione GPT-5 e avatar parlante.
 
-Currently, two official plugins are available:
+## Struttura
+- `src/App.jsx`: interfaccia con avatar e messaggistica
+- `api/chat.js`: funzione serverless per chiamare OpenAI
+- `public/avatar.png`: immagine avatar (sostituibile)
+- `package.json`, `vite.config.js`, `index.html`: configurazioni Vite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Variabili ambiente
+- `OPENAI_API_KEY`: la chiave OpenAI da impostare su Vercel
 
-## Expanding the ESLint configuration
+## Comandi
+- `npm install`
+- `npm run dev` per avviare in locale
+- `npm run build` per build di produzione
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
