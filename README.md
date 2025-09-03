@@ -1,18 +1,14 @@
-# Virtuality-Nova V6
+# Virtuality-Nova GPT Test
 
-Progetto React + Vite con integrazione GPT-5 e avatar parlante.
+Progetto minimale React + Vite per testare la connessione a GPT.
 
-## Struttura
-- `src/App.jsx`: interfaccia con avatar e messaggistica
-- `api/chat.js`: funzione serverless per chiamare OpenAI
-- `public/avatar.png`: immagine avatar (sostituibile)
-- `package.json`, `vite.config.js`, `index.html`: configurazioni Vite
+## Funzioni
+- Input testo e output risposta GPT
+- Backend serverless API su Vercel
+- Usa variabile `OPENAI_API_KEY`
 
-## Variabili ambiente
-- `OPENAI_API_KEY`: la chiave OpenAI da impostare su Vercel
-
-## Comandi
-- `npm install`
-- `npm run dev` per avviare in locale
-- `npm run build` per build di produzione
+## Deploy
+1. Carica su GitHub
+2. Su Vercel: aggiungi variabile ambiente `OPENAI_API_KEY`
+3. Deploy e prova su browser
 

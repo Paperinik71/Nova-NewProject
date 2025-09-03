@@ -2,7 +2,7 @@ export const config = { runtime: 'edge' };
 
 export async function POST(req) {
   try {
-    const { model = 'gpt-5', messages = [] } = await req.json();
+    const { model = 'gpt-4.1-mini', messages = [] } = await req.json();
     const apiKey = process.env.OPENAI_API_KEY;
     if (!apiKey) return new Response(JSON.stringify({ error: 'Missing OPENAI_API_KEY' }), { status: 500 });
 
