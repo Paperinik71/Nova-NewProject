@@ -1,14 +1,15 @@
-# Virtuality-Nova GPT Test
+# Virtuality‑Nova • GPT + Voce (TTS)
 
-Progetto minimale React + Vite per testare la connessione a GPT.
+Progetto minimale per testare chat GPT + Text‑to‑Speech su Vercel.
 
-## Funzioni
-- Input testo e output risposta GPT
-- Backend serverless API su Vercel
-- Usa variabile `OPENAI_API_KEY`
+## Endpoints
+- `POST /api/chat` -> { text } risposta del modello
+- `POST /api/tts`  -> audio/mp3 della frase passata
+
+## Variabili d'ambiente
+- `OPENAI_API_KEY` (obbligatoria)
 
 ## Deploy
-1. Carica su GitHub
-2. Su Vercel: aggiungi variabile ambiente `OPENAI_API_KEY`
-3. Deploy e prova su browser
-
+1) Carica cartella su GitHub
+2) In Vercel, aggiungi `OPENAI_API_KEY` nelle Environment Variables (Production/Preview/Development)
+3) Deploy. Apri il sito, scrivi un messaggio: sentirai la risposta parlata.
